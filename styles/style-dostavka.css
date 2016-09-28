@@ -1,0 +1,55 @@
+h2.dostavka_content_head{
+	display:block;
+	font-weight:bold;
+	font-size:17px;
+	color:black;
+	margin:0;
+	margin-top:-3px;
+	margin-left:-3px;
+	margin-bottom:27px;
+}
+.content h3.dostavka_headers{
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:19px;
+}
+.content h4.dostavka_headers{
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:3px;
+}	
+.content p.info_dostavka{
+	font-size:13px;
+	line-height:18px;
+	margin-bottom:18px;
+	margin-top:0px;
+	white-space:pre-line;
+}
+.content p.cursiv_text{
+	font-style:italic;
+}
+.content p.info_dostavka span.price{
+	font-size:13px;
+	font-weight:bold;
+}
+ol.numeric_list{
+	font-size:13px;
+	padding:0;
+	margin:0;
+	margin:19px 0 20px 14px;
+}
+ol.numeric_list li{
+	margin-bottom:3px;
+}
+
+#head-news{
+	margin-top:51px;
+}
+footer{
+	margin-top:50px;
+}
+@media (max-width:945px)
+{
+	h2.dostavka_content_head{
+		margin-top:15px;
+	}

@@ -1,0 +1,124 @@
+@media (max-width:1945px)
+{
+	#submitF{
+		color:rgb(255,229,88);
+		border-color:rgb(255,229,88);
+	}
+	#open-close{
+		margin-bottom:13px;
+	}
+	aside{
+		display:none;
+	}
+	h2.registration_content_head{
+		display:block;
+		font-weight:bold;
+		font-size:21px;
+		color:rgb(66,66,66);
+		margin:0;
+		margin-top:23px;
+		margin-left:-2px;
+		margin-bottom:3px;
+	}
+		
+	#nessesary_prompt{
+		font-size:13px;
+		color:rgb(66,66,66);
+	}
+	#nessesary_prompt:before{
+		content:"*";
+		color:red;
+		position:relative;
+		margin-left:0px;
+	}
+
+	ul#misstakes{
+		display:none;
+		width:420px;
+		margin:16px 0px 2px 2px;
+		background:rgb(255,241,241);
+		border:1px solid rgb(255,220,220);
+		padding-bottom:12px;
+	}
+	ul#misstakes li{
+		display:none;
+		width:100%;
+		color:red;
+		font-size:13px;
+		padding:6px 0 2px 3px;
+		margin-top:-2px;
+	}
+	ul#misstakes li:first-child{
+		margin-top:0px;
+	}
+
+	form#form_user{
+		margin-top:19px;
+	}
+	.content ul#registration_client{
+		display:block;
+	}
+	#registration_client li.bad_value input{
+		border-color:red;
+	}
+	#registration_client label{
+		display:block;
+		font-size:13px;
+		color:rgb(66,66,66);
+		margin-bottom:7px;
+		margin-left:5px;
+	}
+	#registration_client input{
+		border-radius:8px;
+		border:1px solid rgb(198,191,172);
+		height:25px;
+		width:258px;
+		margin-bottom:6px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	#registration_client span.warning{
+		display:none;
+		color:red;
+		margin-bottom:11px;
+		margin-left:6px;
+		font-size:12px;
+	}
+	#registration_client li.bad_value span.warning{
+		display:block;
+	}
+	#registration_client input:focus{
+		outline:none;
+	}
+	#registration_client input[id="registr_phone"]{
+	  -moz-appearance: textfield;
+	  margin-bottom:16px;
+	}
+	#registration_client input[id="registr_phone"]::-webkit-inner-spin-button { 
+	  display: none;
+	}	
+	.nessesary_after:after{
+		content:"*";
+		color:red;
+		margin-left:4px;
+		position:relative;
+	}
+
+	input#send{
+		cursor:pointer;
+		border-radius:0px;
+		border:none; 
+		border-bottom:1px rgb(0,179,29) solid;
+		text-decoration:none;
+		color:rgb(0,179,29); 
+		font-size:13px;
+		font-weight:bold;
+		background:transparent; 
+		padding:0;
+		margin-top:5px;
+	}
+	
+	footer{
+		margin-top:80px;
+	}
+}

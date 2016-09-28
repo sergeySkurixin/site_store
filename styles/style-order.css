@@ -1,0 +1,304 @@
+.content{
+	margin-top:31px;
+	position:relative;
+	left:-2px;
+}
+.content form{
+	width:100%;
+}
+aside #head-news{
+	margin-top:50px;
+}
+#h2_oformlenie_zakaza{
+	font-size:17px;
+	margin-bottom:1px;
+}
+#nessesary_prompt{
+	font-size:13px;
+}
+#nessesary_prompt:before{
+	content:"*";
+	color:red;
+	position:relative;
+}
+h3.head_of_list_order{
+	margin-left:6px;
+	margin-top:20px;
+	font-size:13px;
+	letter-spacing:0.15px;
+}
+#order_main div.content ul{
+	display:block;
+	border-bottom:2px solid rgb(218,218,218);
+	padding-bottom:15px;
+	margin-bottom:25px;
+}
+#information_about_client label{
+	margin-left:6px;
+	display:block;
+	font-size:13px;
+	color:rgb(66,66,66);
+	margin-bottom:7px;
+	letter-spacing:-0.2px;
+}
+#information_about_client label[for="inform_address"]{
+	margin-left:7px;
+	margin-top:1px;
+	margin-bottom:3px;
+}
+#information_about_client span.sample{
+	margin-left:6px;
+	margin-bottom:8px;
+	display:block;
+	font-size:11px;
+	color:rgb(128,128,128);
+}
+#information_about_client input{
+	border-radius:8px;
+	border:1px solid rgb(198,191,172);
+	height:25px;
+	width:258px;
+	margin-bottom:15px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#information_about_client input:focus{
+	outline:none;
+}
+#information_about_client li div{
+	position:relative;
+}
+#information_about_client li div:before{
+	content:url(../img/search.png);
+	position:absolute;
+	top:6px;
+	left:9px;
+}
+#information_about_client input[id="inform_locate"]{
+	width:404px;
+	height:29px;
+	padding-left:30px;
+}
+#information_about_client input[id="inform_phone"]{
+  -moz-appearance: textfield;
+}
+#information_about_client input[id="inform_phone"]::-webkit-inner-spin-button { 
+  display: none;
+}
+#information_about_client input[id="inform_index"]{
+  -moz-appearance: textfield;
+}
+#information_about_client input[id="inform_index"]::-webkit-inner-spin-button { 
+  display: none;
+}
+	
+#information_about_client textarea{
+	resize:none;
+	height:51px;
+	width:382px;
+	border-radius:8px;
+	border:1px solid rgb(198,191,172);
+	margin-bottom:11px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#information_about_client textarea:focus{
+	outline:none;
+}
+.nessesary_after:after{
+	content:"*";
+	color:red;
+	position:relative;
+}
+
+ul#delivery_product{
+	padding-bottom:17px !important;
+}
+#delivery_product li{
+	margin-bottom:9px;
+	margin-top:5px;
+}
+#delivery_product input[type=radio] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+#delivery_product label {
+	margin-top:4px;
+	width:710px;
+	display:inline-block;
+}
+#delivery_product label span.delivery_name{
+	cursor: pointer;
+	font-size:15px;
+}
+#delivery_product label span.delivery_name:after{
+	content:"\A";
+	white-space:pre;
+}
+#delivery_product label span.delivery_about{
+	line-height:28px;
+	cursor: pointer;
+	font-size:13px;
+}
+#delivery_product label[for="samovivoz"]:before {
+	cursor: pointer;
+	float:left;
+	content:"";
+	width: 86px;
+	height: 36px;
+	background:white url(../img/3Dbox.png) no-repeat 34px 8px;
+	border:1px solid rgb(222,222,222);
+	border-radius:10px;
+	margin:1px 11px 1px 2px;
+}
+#delivery_product label[for="TKenergia"]:before {
+	cursor: pointer;
+	float:left;
+	content:"";
+	width: 86px;
+	height: 38px;
+	background:white url(../img/energy.png) no-repeat 8px 14px;
+	border:1px solid rgb(222,222,222);
+	border-radius:10px;
+	margin:1px 11px 1px 2px;
+}
+#delivery_product label[for="EMS_delivery"]:before {
+	cursor: pointer;
+	float:left;
+	content:"";
+	width: 86px;
+	height: 39px;
+	background:white url(../img/EMS.png) no-repeat 14px 12px;
+	border:1px solid rgb(222,222,222);
+	border-radius:12px 12px 10px 10px;
+	margin:1px 11px 1px 2px;
+}
+#delivery_product input[type=radio]:checked + label:before {
+	border:2px solid green;
+	margin-top:0px;
+	margin-right:10px;
+	margin-left:1px;
+	margin-bottom:0px;
+}
+
+
+ul#payment_system{
+	margin-top:16px;
+	padding-bottom:13px !important;
+}
+#payment_system li{
+	margin-bottom:18px;
+	margin-top:5px;
+}
+#payment_system input[type=radio] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+#payment_system label {
+	margin-top:4px;
+}
+#payment_system label span.payment_name{
+	cursor: pointer;
+	font-size:15px;
+}
+#payment_system label span.payment_about{
+	line-height:28px;
+	cursor: pointer;
+	font-size:13px;
+}
+#payment_system label[for="cash"]:before {
+	cursor: pointer;
+	content:"\20BD";
+	font-size:24px;
+	line-height:20px;
+	color:rgb(163,163,163);
+	display: inline-block;
+	vertical-align:middle;
+	padding:9px 38px 9px 37px;
+	background:white;
+	border:1px solid rgb(222,222,222);
+	border-radius:10px;
+	margin:1px 6px 1px 1px;
+}
+#payment_system label[for="sberband"]:before {
+	cursor: pointer;
+	content:"";
+	display: inline-block;
+	vertical-align:middle;
+	width: 88px;
+	height: 38px;
+	background:white url(../img/sberbank.png) no-repeat 11px 12px;
+	border:1px solid rgb(222,222,222);
+	border-radius:10px;
+	margin:1px 6px 1px 1px;
+}
+#payment_system label[for="bank_payment"]:before {
+	cursor: pointer;
+	content:"";
+	display: inline-block;
+	vertical-align:middle;
+	width: 88px;
+	height: 38px;
+	background:white url(../img/bank_payment.png) no-repeat 33px 8px;
+	border:1px solid rgb(222,222,222);
+	border-radius:12px 12px 10px 10px;
+	margin:1px 6px 1px 1px;
+}
+#payment_system label[for="electronic_payment"]:before {
+	cursor: pointer;
+	content:"";
+	display: inline-block;
+	vertical-align:middle;
+	width: 86px;
+	height: 36px;
+	background:white url(../img/electronic_payment.png) no-repeat 31px 10px;
+	border:1px solid rgb(222,222,222);
+	border-radius:12px 12px 10px 10px;
+	margin:1px 6px 1px 1px;
+}
+#payment_system input[type=radio]:checked + label:before {
+	border:2px solid green;
+	margin:0px 5px 0px 0px;
+}
+
+div#return{
+	float:left;
+	margin-top:-3px;
+}
+div#return a{
+	font-weight:bold;
+	color:rgb(0,91,193);
+	font-size:13px;
+	text-decoration:none;
+	border-bottom:1px solid rgb(0,91,193);
+}
+div#return:before{
+	content:"\2190";
+	color:rgb(0,91,193);
+	font-size:13px;
+	font-weight:bold;
+	display:inline-block;
+}
+.content input[type="submit"]{
+	cursor:pointer;
+	float:right;
+	border-radius:0px;
+	border:none; 
+	border-bottom:1px rgb(0,179,29) solid;
+	text-decoration:none;
+	color:rgb(0,179,29); 
+	font-size:13px;
+	font-weight:bold;
+	background:transparent; 
+	padding:0;
+	margin-top:-1px;
+	margin-right:6px;
+}
+
+footer{
+	margin-top:63px;
+}
+
+@media (max-width:945px)
+{
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
+		<script text="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<title>Заказ</title>
+		<link href="styles/style-main.css" rel="stylesheet">
+		<link href="styles/style-order.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="layout-positioner logotips">
+				<div class="border_gradient_logo">
+					<div class="logo">
+						<h1 id="company">COMPANY</h1>
+					</div>
+				</div>
+				<div class="border_gradient_nanotechn">
+					<div class="nanotechn"></div>
+				</div>
+				<div class="nanotechn-zdorovia">Нанотехнологии здоровья</div>
+				<address>
+					<a href="mailto:info@company.ru">
+						<span id="mail">info@company.ru</span>
+					</a>
+					<span id="phone-number">+7 (383) 349-18-49</span>
+				</address>
+			</div>
+			<div class="layout-positioner">
+				<div class="form-login">
+					<form method="post">
+						<label for="loginID">Логин:</label>
+						<input type="text" name="login" id="loginID">
+						<label for="passwordID">Пароль:</label>
+						<input type="password" name="password" id="passwordID">
+						<input type="submit" id="submitF" value="Войти">
+						<a href="#">Регистрация</a>
+					</form>
+					<div class="basket">
+						В <a href="#">корзине</a> товаров <span>12</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="fon_grey">
+			<div class="layout-positioner"> 
+				<span id="open-close">Меню</span>
+				<ul id="list_grey">
+					<li><a href="#">Главная</a></li>
+					<li id="2row">
+						<a href="#">Каталог</a>
+						<ul class="inner">
+							<li><a href="#">Электронные сигареты</a></li>
+							<li><a href="#">Трубки</a></li>
+							<li><a href="#">Картриджи</a></li>
+							<li><a href="#">Аккумуляторы и атомайзеры</a></li>
+							<li><a href="#">Аксессуары</a></li>
+							<li><a href="#">Зарядные устройства</a></li>
+							<li><a href="#">Жидкости для заправки</a></li>
+							<li><a href="#">Подарочне наборы</a></li>
+						</ul>
+					</li>
+					<li id="3row"><a href="#">О компании</a></li>
+					<li id="4row"><a href="#">Новости</a></li>
+					<li id="5row"><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Контакты</a></li>	
+				</ul>
+			</div>
+		</div>
+		<div id="order_main" class="layout-positioner main_class">
+			<aside>
+				<h2 id="head-katalog">Каталог</h2>
+				<ul class="katalog">
+					<li><a href="#">Электронные сигареты</a></li>
+					<li><a href="#">Трубки</a></li>
+					<li><a href="#">Жидкости для заправки</a></li>
+					<li><a href="#">Аккумуляторы и атомайзеры</a></li>
+					<li><a href="#">Картриджи</a></li>
+					<li><a href="#">Зарядные устройства</a></li>
+					<li><a href="#">Аксессуары</a></li>
+					<li><a href="#">Подарочне наборы</a></li>
+				</ul>
+				<h2 id="head-news">Новости</h2>
+				<ul class="news">
+					<li>
+						<div><a href="#">Поздравительная речь президента международной 
+						корпорации Хуа Шэн господина Ли Вея в Международный центр</a></div>
+						<span>2010-03-03</span></li>
+					<li>
+						<div><a href="#">Собрание правления киевского филиала</a></div>
+						<span>2010-02-27</span></li>
+					<li>
+						<div><a href="#">Петропавловскому офису международной корпорации Хуа Шэнисполнился 1 год</a></div>
+						<span>2010-02-23</span></li>
+					<li>
+						<div><a href="#">Проведение церемонии награждения
+						в бишкекском филиале</a></div>
+						<span>2010-02-22</span></li>
+					<li>
+						<div><a href="#">Сотрудники иркутского филиала отметили китайский новый год </a></div>
+						<span>2010-02-15</span></li>
+					<li>
+						<div><a href="#">Празднование китайского нового года в одесском филиале</a></div>
+						<span>2010-02-14</span></li>
+				</ul>
+				<a href="#" class="arhiv">Архив новостей</a>
+			</aside>
+			<div class="content">
+				<h2 id="h2_oformlenie_zakaza">Оформление заказа</h2>
+				<span id="nessesary_prompt"> &mdash; обязательные для заполнения поля</span>
+				
+				<form method="post">
+					<h3 class="head_of_list_order">Информация о покупателе</h3>
+					<ul id="information_about_client">
+						<li>
+							<label for="inform_name" class="nessesary_after">Имя</label>
+							<input id="inform_name" type="text" name="inform_name">
+						</li>
+						<li>
+							<label for="inform_mail" class="nessesary_after">Электронная почта</label>
+							<input id="inform_mail" type="email" name="inform_mail">
+						</li>
+						<li>
+							<label for="inform_phone">Телефон</label>
+							<input id="inform_phone" type="number" name="inform_phone">
+						</li>
+						<li>
+							<label for="inform_index" class="nessesary_after">Индекс</label>
+							<input id="inform_index" type="number" name="inform_index">
+						</li>
+						<li>
+							<label for="inform_locate" class="nessesary_after">Местоположение</label>
+							<div><input id="inform_locate" type="search" name="inform_locate"></div>
+						</li>
+						<li>
+							<label for="inform_address" class="nessesary_after">Адрес доставки</label>
+							<span class="sample">ул. Ударная 27/2, кв. 54, 3 подъезд, 8 этаж</span>
+							<textarea id="inform_address" name="inform_address"></textarea>
+						</li>
+						<li>
+							<label for="inform_coment" class="nessesary_after">Комментарий к заказу</label>
+							<textarea id="inform_coment" name="inform_coment"></textarea>
+						</li>
+					</ul>
+					
+					<h3 class="head_of_list_order nessesary_after">Способ доставки</h3>
+					<ul id="delivery_product">
+						<li>
+							<input type="radio" id="samovivoz" name="way">
+							<label for="samovivoz">
+								<span class="delivery_name">Самовывоз</span>
+								<span class="delivery_about">Вы можете забрать свой заказ со склада в г. Красноярск, ул. Ленина д.12, офис 345</span>
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="TKenergia" name="way">
+							<label for="TKenergia">
+								<span class="delivery_name">ТК Энергия</span>
+								<span class="delivery_about">Срок доставки от 12 до 16 дней. Стоимость от 202 руб.</span>
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="EMS_delivery" name="way">
+							<label for="EMS_delivery">
+								<span class="delivery_name">EMS Russian Post</span>
+								<span class="delivery_about">Срок доставки от 5 до 10 дней. Стоимость 500 руб.</span>
+							</label>
+						</li>
+					</ul>
+					
+					<h3 class="head_of_list_order nessesary_after">Платежная система</h3>
+					<ul id="payment_system">
+						<li>
+							<input type="radio" id="cash" name="pay">
+							<label for="cash">
+								<span class="payment_name">Наличные</span>
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="sberband" name="pay">
+							<label for="sberband">
+								<span class="payment_name">Перевод через Сбербанк</span>
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="bank_payment" name="pay">
+							<label for="bank_payment">
+								<span class="payment_name">Банковский платеж</span>
+							</label>
+						</li>
+						<li>
+							<input type="radio" id="electronic_payment" name="pay">
+							<label for="electronic_payment">
+								<span class="payment_name">Электронные платежи</span>
+								<span class="payment_about">(банковские карты, webmoney, Яндекс.Деньги, QIWI и т.д)</span>
+							</label>
+						</li>
+					</ul>
+					<div id="return">
+						<a href="#">Вернуться в корзину</a>
+					</div>
+					<input type="submit" value="Оформить заказ">
+				</form>
+			</div>
+				
+		</div>
+		<footer>
+			<div class="layout-positioner">
+				<ul class="footer-elems">
+					<li class="info-about-creature">
+						Copyright &copy;2007-2010<br>
+						<span>&copy; <!--&ldquo;--><span class="skobki">Company</span><!--&rdquo;-->, 2010</span>
+					</li>
+					<li>
+						<ul class="footer-list">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</li>
+					<li class="advertising">
+						Разработка сайта &mdash; <a href="#">ITConstruct</a>
+					</li>
+				</ul>
+			</div>
+			<div class="layout-positioner ended">
+				<a href="#" class="mini-logo-company">
+					<img src="img/logo-mini.png" alt="Логотип мини">
+					<span>COMPANY</span>
+				</a>
+				<div class="schetchiki">
+					<img src="img/info.jpg" alt="Инфо">
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/cufon-yui.js"></script>
+		<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+		<script type="text/javascript" src="js/Open_Sans_400.font.js"></script>
+		<script type="text/javascript" src="js/Open_Sans_Semibold_600.font.js"></script>
+		<script type="text/javascript" src="js/script-main.js"></script>
+		<script type="text/javascript" src="js/script-order.js"></script>
+	</body>
+</html>

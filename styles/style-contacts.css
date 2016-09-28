@@ -1,0 +1,208 @@
+h2.contacts_content_head{
+	display:block;
+	font-weight:bold;
+	font-size:17px;
+	color:black;
+	margin:0;
+	margin-top:-3px;
+	margin-left:-3px;
+}
+div#left_column{
+	display:inline-block;
+	margin-top:14px;
+	margin-bottom:80px;
+}
+div#office_address{
+	width:300px;
+}
+div#partners_shops{
+	margin-top:37px;
+	width:345px;
+}
+div#company_info{
+	vertical-align:top;
+	display:inline-block;
+	margin-top:18px;
+	margin-left:83px;
+	width:290px;
+}
+.content h3.contacts_headers{
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+.content h4.contacts_headers{
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:3px;
+}	
+.content p.info_contacts{
+	font-size:13px;
+	line-height:18px;
+	margin-bottom:18px;
+	margin-top:0px;
+	white-space:pre-line;
+}
+h2.callback{
+	margin-left:1px;
+}
+#nessesary_prompt{
+	font-size:13px;
+}
+#nessesary_prompt:before{
+	content:"*";
+	color:red;
+	position:relative;
+	margin-left:1px;
+}
+
+ul#misstakes{
+	display:none;
+	margin:16px 0px 0px 2px;
+	background:rgb(255,241,241);
+	border:1px solid rgb(255,220,220);
+	padding-bottom:12px;
+}
+ul#misstakes li{
+	display:none;
+	width:418px;
+	color:red;
+	font-size:13px;
+	padding:8px 0 0px 13px;
+	margin-top:-2px;
+}
+ul#misstakes li:first-child{
+	margin-top:0px;
+}
+
+form#form_user{
+	margin-top:19px;
+}
+.content ul#information_about_client{
+	display:block;
+}
+#information_about_client li.bad_value input{
+	border-color:red;
+}
+#information_about_client label{
+	display:inline-block;
+	font-size:12px;
+	color:rgb(66,66,66);
+	width:118px;
+	text-align:right;
+	margin-bottom:7px;
+}
+#information_about_client label[for="inform_phone"]{
+	position:relative;
+	left:-9px;
+	top:-2px;
+}
+#information_about_client label[for="inform_coment"]{
+	display:block;
+	width:auto;
+	text-align:left;
+	font-size:13px;
+	font-weight:bold;
+	margin-top:19px;
+	margin-left:128px;
+}
+
+#information_about_client input{
+	border-radius:8px;
+	border:1px solid rgb(198,191,172);
+	height:25px;
+	width:258px;
+	margin-bottom:6px;
+	margin-left:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#information_about_client span.warning{
+	display:none;
+	color:red;
+	margin-left:134px;
+	margin-bottom:17px;
+	font-size:12px;
+}
+#information_about_client li.bad_value span.warning{
+	display:block;
+}
+#information_about_client input:focus{
+	outline:none;
+}
+#information_about_client input[id="inform_phone"]{
+  -moz-appearance: textfield;
+}
+#information_about_client input[id="inform_phone"]::-webkit-inner-spin-button { 
+  display: none;
+}	
+#information_about_client textarea{
+	resize:none;
+	height:135px;
+	display:block;
+	width:416px;
+	border-radius:8px;
+	border:1px solid rgb(198,191,172);
+	margin-left:128px;
+	margin-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#information_about_client textarea:focus{
+	outline:none;
+}
+.nessesary_after:after{
+	content:"*";
+	color:red;
+	margin-left:4px;
+	position:relative;
+}
+
+input#send{
+	cursor:pointer;
+	border-radius:0px;
+	border:none; 
+	border-bottom:1px rgb(0,179,29) solid;
+	text-decoration:none;
+	color:rgb(0,179,29); 
+	font-size:13px;
+	font-weight:bold;
+	background:transparent; 
+	padding:0;
+	margin-left:128px;
+}
+input#reset_values{
+	cursor:pointer;
+	border-radius:0px;
+	border:none; 
+	border-bottom:1px red solid;
+	text-decoration:none;
+	color:red; 
+	background:transparent; 
+	padding:0;
+	font-size:13px;
+	font-weight:bold;
+	margin-left:32px;
+}
+
+#head-news{
+	margin-top:51px;
+}
+footer{
+	margin-top:65px;
+}
+@media (max-width:945px)
+{
+	h2.contacts_content_head{
+		margin-top:20px;
+	}
+	div#company_info{
+		margin:0;
+	}
+	#information_about_client label[for="inform_coment"]{
+		margin-left:0px;
+	}
+	#information_about_client textarea{
+		margin-left:0px;
+	}
+}

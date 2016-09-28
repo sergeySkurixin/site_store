@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
+		<script text="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<title>Корзина</title>
+		<link href="styles/style-main.css" rel="stylesheet">
+		<link href="styles/style-basket.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="layout-positioner logotips">
+				<div class="border_gradient_logo">
+					<div class="logo">
+						<h1 id="company">COMPANY</h1>
+					</div>
+				</div>
+				<div class="border_gradient_nanotechn">
+					<div class="nanotechn"></div>
+				</div>
+				<div class="nanotechn-zdorovia">Нанотехнологии здоровья</div>
+				<address>
+					<a href="mailto:info@company.ru">
+						<span id="mail">info@company.ru</span>
+					</a>
+					<span id="phone-number">+7 (383) 349-18-49</span>
+				</address>
+			</div>
+			<div class="layout-positioner">
+				<div class="form-login">
+					<form method="post">
+						<label for="loginID">Логин:</label>
+						<input type="text" name="login" id="loginID">
+						<label for="passwordID">Пароль:</label>
+						<input type="password" name="password" id="passwordID">
+						<input type="submit" id="submitF" value="Войти">
+						<a href="#">Регистрация</a>
+					</form>
+					<div class="basket">
+						В <a href="#">корзине</a> товаров <span>12</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="fon_grey">
+			<div class="layout-positioner"> 
+				<span id="open-close" class="basket_open_close">Меню</span>
+				<ul id="list_grey">
+					<li><a href="#">Главная</a></li>
+					<li id="2row">
+						<a href="#">Каталог</a>
+						<ul class="inner">
+							<li><a href="#">Электронные сигареты</a></li>
+							<li><a href="#">Трубки</a></li>
+							<li><a href="#">Картриджи</a></li>
+							<li><a href="#">Аккумуляторы и атомайзеры</a></li>
+							<li><a href="#">Аксессуары</a></li>
+							<li><a href="#">Зарядные устройства</a></li>
+							<li><a href="#">Жидкости для заправки</a></li>
+							<li><a href="#">Подарочне наборы</a></li>
+						</ul>
+					</li>
+					<li id="3row"><a href="#">О компании</a></li>
+					<li id="4row"><a href="#">Новости</a></li>
+					<li id="5row"><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Контакты</a></li>	
+				</ul>
+			</div>
+		</div>
+		<div id="basket_main" class="layout-positioner main_class">
+			<aside class="basket_aside">
+				<h2 id="head-katalog">Каталог</h2>
+				<ul class="katalog">
+					<li><a href="#">Электронные сигареты</a></li>
+					<li><a href="#">Трубки</a></li>
+					<li><a href="#">Жидкости для заправки</a></li>
+					<li><a href="#">Аккумуляторы и атомайзеры</a></li>
+					<li><a href="#">Картриджи</a></li>
+					<li><a href="#">Зарядные устройства</a></li>
+					<li><a href="#">Аксессуары</a></li>
+					<li><a href="#">Подарочне наборы</a></li>
+				</ul>
+				<h2 id="head-news" class="basket_head_news">Новости</h2>
+				<ul class="news">
+					<li>
+						<div><a href="#">Поздравительная речь президента международной 
+						корпорации Хуа Шэн господина Ли Вея в Международный центр</a></div>
+						<span>2010-03-03</span></li>
+					<li>
+						<div><a href="#">Собрание правления киевского филиала</a></div>
+						<span>2010-02-27</span></li>
+					<li>
+						<div><a href="#">Петропавловскому офису международной корпорации Хуа Шэнисполнился 1 год</a></div>
+						<span>2010-02-23</span></li>
+					<li>
+						<div><a href="#">Проведение церемонии награждения
+						в бишкекском филиале</a></div>
+						<span>2010-02-22</span></li>
+					<li>
+						<div><a href="#">Сотрудники иркутского филиала отметили китайский новый год </a></div>
+						<span>2010-02-15</span></li>
+					<li>
+						<div><a href="#">Празднование китайского нового года в одесском филиале</a></div>
+						<span>2010-02-14</span></li>
+				</ul>
+				<a href="#" class="arhiv">Архив новостей</a>
+			</aside>
+			<div class="content">
+				<h2 id="basket_content_head">Корзина</h2>
+				<span id="basket_deleteAll">Очистить</span>
+				<ul id="basket_list">
+					<li class="basket_item">
+						<a href="#">
+							<img src="img/electro-cigaro-takaia-to.jpg" alt="Электронная сигарета">
+						</a>
+						<ul class="basket_inner">
+							<li>
+								<a href="#" class="description">
+									<em>Электронная сигарета «Такая-то»</em>
+								</a>
+							</li>
+							<li class="counter">
+								<span class="minus">&#8212;</span>
+								<input type="text" value="1" size="3"/>
+								<span class="plus">+</span>
+							</li>
+							<li class="basket_prices">
+								<span class="basket_price_for_thing">1500</span>
+							</li>
+							<li>
+								<a href="#" class="basket_delete_thing">Удалить</a>
+							</li>
+						</ul>
+					</li>
+					<li class="basket_item">
+						<a href="#">
+							<img src="img/cigaro-squareSPEN.jpg" alt="Электронная сигарета">
+						</a>
+						<ul class="basket_inner">
+							<li>
+								<a href="#" class="description">
+									<em>Многоразовая электронная сигарета Square S-PEN серебристого цвета</em>
+								</a>
+							</li>
+							<li class="counter">
+								<span class="minus">&#8212;</span>
+								<input type="text" value="2" size="3"/>
+								<span class="plus">+</span>
+							</li>
+							<li class="basket_prices">
+								<span class="basket_price_for_thing">13 200</span>
+								<span class="basket_sum_price">
+									<span class="number_of_things">2</span>
+									<span class="basket_total_price">26 400</span>
+								</span>
+							</li>
+							<li>
+								<a href="#" class="basket_delete_thing">Удалить</a>
+							</li>
+						</ul>
+					</li>
+					<li class="basket_item">
+						<a href="#">
+							<img src="img/cigaro-squareTVAPE.jpg" alt="Электронная сигарета">
+						</a>
+						<ul class="basket_inner">
+							<li>
+								<a href="#" class="description">
+									<em>Многоразовая электронная сигарета для курения табака Square TVAPE черного цвета</em>
+								</a>
+							</li>
+							<li class="counter">
+								<span class="minus">&#8212;</span>
+								<input type="text" value="1" size="3"/>
+								<span class="plus">+</span>
+							</li>
+							<li class="basket_prices">
+								<span class="basket_price_for_thing">5500</span>
+							</li>
+							<li>
+								<a href="#" class="basket_delete_thing">Удалить</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div id="itogo">
+					Итого: <span id="total_price">1543689</span>
+					<a href="#">Оформить заказ</a>
+				</div>
+			</div>
+		</div>
+		<footer id="basket_footer">
+			<div class="layout-positioner">
+				<ul class="footer-elems">
+					<li class="info-about-creature">
+						Copyright &copy;2007-2010<br>
+						<span>&copy; <!--&ldquo;--><span class="skobki">Company</span><!--&rdquo;-->, 2010</span>
+					</li>
+					<li>
+						<ul class="footer-list">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</li>
+					<li class="advertising">
+						Разработка сайта &mdash; <a href="#">ITConstruct</a>
+					</li>
+				</ul>
+			</div>
+			<div class="layout-positioner ended">
+				<a href="#" class="mini-logo-company">
+					<img src="img/logo-mini.png" alt="Логотип мини">
+					<span>COMPANY</span>
+				</a>
+				<div class="schetchiki">
+					<img src="img/info.jpg" alt="Инфо">
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/cufon-yui.js"></script>
+		<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+		<script type="text/javascript" src="js/script-main.js"></script>
+		<script type="text/javascript" src="js/script-basket.js"></script>
+	</body>
+</html>

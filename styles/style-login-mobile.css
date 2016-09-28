@@ -1,0 +1,63 @@
+@media (max-width:1945px)
+{
+	#submitF{
+		color:rgb(255,229,88);
+		border-color:rgb(255,229,88);
+	}
+	#open-close{
+		margin-bottom:13px;
+	}
+	aside{
+		display:none;
+	}
+	h2#login_content_head{
+		color:rgb(66,66,66);
+		font-size:21px;
+		font-weight:bold;
+		margin-top:23px;
+		margin-left:-2px;
+		margin-bottom:19px;
+	}
+	
+	#login_mobile label{
+		margin-left:6px;
+		display:block;
+		font-size:13px;
+		color:rgb(66,66,66);
+		margin-bottom:7px;
+		letter-spacing:-0.2px;
+	}
+	#login_mobile input{
+		border-radius:8px;
+		border:1px solid rgb(198,191,172);
+		height:25px;
+		width:258px;
+		margin-bottom:15px;
+		padding-left:10px;
+		padding-right:10px;
+	}
+	#login_mobile input:focus{
+		outline:none;
+	}
+	#login_mobile input[type="submit"]{
+		cursor:pointer;
+		border-radius:0px;
+		border:none; 
+		display:block;
+		border-bottom:1px rgb(0,179,29) solid;
+		text-decoration:none;
+		color:rgb(0,179,29); 
+		font-size:13px;
+		font-weight:bold;
+		width:40px;
+		line-height:32px;
+		margin-left:-2px;
+		margin-top:2px;
+		background:transparent; 
+		padding:0;
+	}
+	
+	footer{
+		margin-top:133px;
+	}
+}

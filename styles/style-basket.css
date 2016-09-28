@@ -1,0 +1,311 @@
+h2#basket_content_head{
+	font-weight:bold;
+	font-size:17px;
+	color:black;
+	float:left;
+	margin:0;
+	margin-top:-2px;
+	margin-left:-3px;
+}
+span#basket_deleteAll{
+	cursor:pointer;
+	float:right;
+	color:red;
+	font-size:13px;
+	font-weight:normal;
+	margin-top:3px;
+	margin-right:1px;
+	border-bottom:1px solid red;
+	line-height:12px;
+}
+ul#basket_list{
+	margin-top:24px;
+}
+ul#basket_list>li.basket_item{
+	display:block;
+	width:100%;
+	border-bottom:2px solid rgb(221,221,221);
+	margin:0;
+	padding:0;
+	padding:20px 0;
+}
+ul#basket_list>li.basket_item a{
+	text-decoration:none;
+}
+ul#basket_list>li.basket_item img{
+	display:inline-block;
+	height:auto;
+	width:auto;
+	margin:0;
+	padding:0;
+	border:grey 4px solid;
+	margin-right:19px;
+	margin-left:-1px;
+	border-width:4px;
+	vertical-align:middle;
+}
+ul#basket_list>li.basket_item a:hover>img{
+	border:green 4px solid;
+}
+ul#basket_list>li.basket_item a:hover+ul>li>a>em{
+	color:rgb(84,158,241);
+}
+ul#basket_list>li.basket_item a:hover em{
+	color:rgb(84,158,241);
+}
+
+ul#basket_list>li.basket_item ul.basket_inner{
+	display:inline-block;
+	vertical-align:middle;
+}
+ul#basket_list>li.basket_item ul.basket_inner li{
+	margin:0px;
+	display:inline-block;
+	vertical-align:top;
+}
+ul#basket_list>li.basket_item a.description{
+	text-decoration:none;
+	color:rgb(0,91,193);
+	display:inline-block;
+	font-size:13px;
+	border:none;
+	width:226px;
+}
+ul#basket_list>li.basket_item em{
+	border-bottom:1px solid;
+	line-height:20px;
+	font-style:normal;
+	text-decoration:none;
+}
+
+ul#basket_list>li.basket_item span.minus{
+	cursor:pointer;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	width:18px;
+	height:22px;
+	border:1px solid rgb(218,218,218);
+	border-radius:8px 0 0 8px;
+	border-right-width:0;
+	background:white;
+	text-align:center;
+	color:black;
+	line-height:22px;
+	font-size:10px;
+	margin-left:59px;
+	vertical-align:top;
+}
+ul#basket_list>li.basket_item input{
+	display:inline-block;
+	width:33px;
+	height:20px;
+	border:1px solid rgb(218,218,218);
+	text-align:center;
+	color:black;
+	margin-left:-4px;
+}
+ul#basket_list>li.basket_item span.plus{
+	cursor:pointer;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	width:19px;
+	height:22px;
+	border:1px solid rgb(218,218,218);
+	border-radius:0 8px 8px 0;
+	border-left-width:0;
+	background:white;
+	text-align:center;
+	color:black;
+	line-height:23px;
+	font-size:18px;
+	margin-left:-4px;
+	vertical-align:top;
+}
+
+ul#basket_list>li.basket_item ul.basket_inner li.basket_prices{
+	margin:0px;
+	text-align:right;
+	width:116px;
+	margin-top:2px;
+}
+ul#basket_list>li.basket_item ul.basket_inner li.basket_prices span.basket_price_for_thing{
+	display:block;
+	font-weight:bold;
+	font-size:18px;
+}
+ul#basket_list>li.basket_item ul.basket_inner li.basket_prices span.basket_price_for_thing:after{
+	content:" руб.";
+	font-weight:normal;
+	font-size:18px;
+}
+ul#basket_list>li.basket_item ul.basket_inner li.basket_prices span.number_of_things:before{
+	content:'\D7';
+	margin-right:1px;
+}
+ul#basket_list>li.basket_item ul.basket_inner li.basket_prices span.number_of_things:after{
+	content:'\2014';
+	margin-right:3px;
+	margin-left:3px;
+}
+ul#basket_list>li.basket_item ul.basket_inner li.basket_prices span.basket_sum_price{
+	display:block;
+	font-size:11px;
+	color:rgb(121,121,121);
+	margin-top:4px;
+	margin-right:2px;
+}
+ul#basket_list>li.basket_item ul.basket_inner li.basket_prices span.basket_sum_price:after{
+	content:" руб.";
+	font-size:11px;
+	color:rgb(121,121,121);
+	margin-right:4px;
+}
+ul#basket_list>li.basket_item ul.basket_inner li:last-child{
+	margin:0px;
+	margin-left:43px;
+	margin-top:1px;
+}
+ul#basket_list>li.basket_item ul.basket_inner li a.basket_delete_thing{
+	cursor:pointer;	
+	display:inline-block;
+	color:red;
+	font-size:13px;
+	font-weight:normal;
+	text-decoration:none;
+	border-bottom:1px solid red;
+	line-height:12px;
+}
+
+ul#basket_list>li.basket_item:nth-child(2) ul.basket_inner{
+	margin-top:-4px;
+}
+ul#basket_list>li.basket_item:nth-child(3) ul.basket_inner{
+	margin-top:-7px;
+}
+
+div#itogo{
+	float:right;
+	font-size:15px;
+	margin-right:2px;
+	margin-top:22px;
+}
+span#total_price{
+	margin-left:7px;
+	font-weight:bold;
+	font-size:18px;
+}
+span#total_price:after{
+	content:' руб.\A';
+	white-space:pre;
+}
+div#itogo a{
+	display:inline-block;
+	color:rgb(0,179,29);
+	font-size:13px;
+	font-weight:bold;
+	margin-top:21px;
+	margin-right:4px;
+	text-decoration:none;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	line-height:12px;
+	float:right;
+}
+#head-news{
+	margin-top:51px;
+}
+#basket_footer{
+	margin-top:60px;
+}
+
+@media (max-width:945px)
+{
+	#open-close.basket_open_close{
+		margin-bottom:13px;
+	}
+	aside.basket_aside{
+		display:none;
+	}
+	#basket_main{
+		margin-top:17px;
+	}
+	h2#basket_content_head{
+		margin-left:-1px;
+	}
+	span#basket_deleteAll{
+		margin-right:0px;
+		line-height:1;
+	}
+	ul#basket_list{
+		margin-top:14px;
+	}
+	ul#basket_list>li.basket_item{
+		padding:30px 0px 14px 0px;
+	}
+	ul#basket_list>li.basket_item img{
+		margin-left:0px;
+		vertical-align:top;
+	}
+	div.content ul#basket_list>li.basket_item ul.basket_inner{
+		margin:0;
+		width:285px;
+		position:relative;
+	}
+	div.content ul#basket_list>li.basket_item ul.basket_inner li{
+		display:block; 
+		margin:0;
+		margin-bottom:15px;
+	}
+	div.content ul#basket_list>li.basket_item:first-child ul.basket_inner a.description{
+		font-size:15px;
+		width:240px;
+	}
+	ul#basket_list>li.basket_item li.counter{
+		width:150px;
+	}
+	ul#basket_list>li.basket_item span.minus{
+		margin:0;
+		height:38px;
+		width:34px;
+		font-size:16px;
+	}
+	ul#basket_list>li.basket_item input{
+		height:36px;
+		width:58px;
+		font-size:18px;
+		line-height:29px;
+	}
+	ul#basket_list>li.basket_item span.plus{
+		height:38px;
+		width:34px;
+		font-size:26px;
+		line-height:36px;
+	}
+	ul#basket_list>li.basket_item ul.basket_inner li.basket_prices{
+		text-align:left;
+		width:100%;
+	}
+	
+	ul#basket_list>li.basket_item ul.basket_inner li a.basket_delete_thing{
+		display:none;
+		text-decoration:none;
+	}
+	ul#basket_list>li.basket_item ul.basket_inner li:last-child{
+		position:absolute;
+		margin:0;
+		bottom:23px;
+		right:0px;
+	}
+	ul#basket_list>li.basket_item ul.basket_inner li:last-child:after{
+		content:url("../img/delete.png");
+		cursor:pointer;
+		pointer-events:all;
+	}
+	
+	
+	#basket_footer{
+		margin-top:99px;
+	}
+}

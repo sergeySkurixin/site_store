@@ -1,0 +1,225 @@
+.content{
+	margin-top:44px;
+	position:relative;
+	left:-2px;
+}
+.content #path_to_page{
+	margin-bottom:12px;
+}
+.content #path_to_page li{
+	display:inline-block;
+	font-size:11px;
+	color:rgb(157,157,157);
+}
+.content #path_to_page li a{
+	color:rgb(157,157,157);
+	text-decoration:none;
+	border-bottom:1px solid rgb(157,157,157);
+}
+.content #path_to_page li:last-child a{
+	border-bottom:none;
+}
+.content #path_to_page li:after{
+	content:"\2192";
+}
+
+form#diapason{
+	margin-bottom:30px;	
+	padding-left:1px;
+}
+form#diapason label{
+	font-size:13px;
+	line-height:29px;
+	color:rgb(76,76,76);
+	margin-right:6px;
+}
+
+form#diapason input[type="number"]{ 
+	-moz-appearance: textfield;
+	width:79px;
+	height:25px;
+	border-radius:8px;
+	outline:none;
+	border:1px solid rgb(198,171,192);
+	padding-left:9px;
+	margin-right:3px;
+}
+form#diapason input[type="number"]::-webkit-inner-spin-button { 
+  display: none;
+}
+form#diapason input[type="submit"]{
+	cursor:pointer;
+	border-radius:0px;
+	border:none; 
+	border-bottom:1px rgb(0,179,29) solid;
+	text-decoration:none;
+	color:rgb(0,179,29); 
+	font-size:13px;
+	font-weight:bold;
+	background:transparent; 
+	padding:0;
+	margin-left:9px;
+}
+form#diapason input[type="image"]{
+	display:none;
+}
+#catalog_main li.content-item{
+	margin-bottom:65px;
+}
+#catalog_main .content-item span.price{
+	margin-top:4px;
+	margin-left:-1px;
+	display:block;
+	font-size:24px;
+	font-weight:bold;
+}
+#catalog_main .content-item span.price:after{
+	content:" руб.";
+	font-size:18px;
+	font-weight:normal;
+}
+#catalog_main .content-item a.basket_thing{
+	cursor:default;
+	margin-top:5px;
+	display:inline-block;
+	font-size:13px;
+	text-decoration:none;
+}
+#catalog_main .content-item a.basket_thing div{
+	cursor:pointer;
+	display:inline-block;
+	color:rgb(0,91,193);
+	line-height:13px;
+	border-bottom:1px solid rgb(0,91,193);
+	position:relative;
+	bottom:3px;
+	margin-left:5px;
+}
+#catalog_main .content-item a.basket_thing:before{
+	content:url(../img/basket_black.png);
+	cursor:pointer;
+	margin-left:1px;
+}
+
+#catalog_main div#changer{
+	display:block;
+	text-align: center;
+}
+#catalog_main div#changer ul{
+	display:inline-block;
+	margin:5px 0px;
+}
+#catalog_main div#changer ul li{
+	display:inline-block;
+	height:24px;
+	width:24px;
+	margin-right:3px;
+	border-radius:3px;
+	text-align:center;
+}
+#catalog_main div#changer ul li:hover{
+	background:rgb(121,121,121);
+}
+.current_page{
+	background:rgb(121,121,121);
+}
+#catalog_main div#changer ul li.current_page a{
+	color:white;
+	border-bottom:none;
+}
+#catalog_main div#changer ul li a{
+	display:inline-block;
+	margin-left:-2px;
+	font-size:13px;
+	color:black;
+	text-decoration:none;
+	line-height:13px;
+	border-bottom:1px solid black;
+}
+#catalog_main div#changer a#next_page{
+	display:inline-block;
+	color:black;
+	font-size:13px;
+	text-decoration:none;
+	border-bottom:1px solid black;
+	line-height:13px;
+	margin-left:7px;
+}
+
+#head-news{
+	margin-top:51px;
+}
+footer{
+	margin-top:53px;
+}
+
+@media (max-width:945px)
+{
+	#open-close{
+		margin-bottom:13px;
+	}
+	#catalog_main{
+		margin-top:15px;
+		position:relative;
+		left:0px;
+	}
+	form#diapason{
+		margin-top:-10px;
+		margin-bottom:38px;	
+		padding:0;
+		margin-left:-1px;
+	}
+	form#diapason input[type="number"]{ 
+		-moz-appearance: textfield;
+		width:69px;
+		position:relative;
+		bottom:1px;
+	}
+	form#diapason input[type="submit"]{
+		display:none;
+	}
+	form#diapason input[type="image"]{
+		display:inline-block;
+		position:relative;
+		top:10px;
+		margin-left:1px;
+	}
+	form#diapason label:last-child:after{
+		content:"\27A5";
+		font-size:18px;
+		border:1px rgb(0,179,29) solid;
+		color:rgb(0,179,29); 
+		padding:5px 5px 2px 6px;
+		border-radius:8px;
+		margin-left:2px;
+		position:relative;
+		top:2px;
+	}
+	ul#list_content{
+		margin-left:-1px;
+	}
+	ul#list_content li.content-item{
+		margin-right:8px;
+	}
+	ul#list_content li.content-item:nth-child(2n){
+		margin-left:0px;
+		margin-right:0px;
+	}
+	#catalog_main li.content-item{
+		margin-bottom:50px;
+	}
+	#catalog_main .content-item span.price{
+		margin-top:3px;
+	}
+	
+	#catalog_main div#changer ul li:nth-child(n+7){
+		display:none;
+	}
+	
+	aside{
+		display:none;
+	}
+	footer{
+		margin-top:63px;
+	}
+}

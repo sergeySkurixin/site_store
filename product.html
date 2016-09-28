@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<!--<script src="http://code.jquery.com/jquery-latest.js"></script>-->
+		<script text="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<title>Товар</title>
+		<link href="styles/style-main.css" rel="stylesheet">
+		<link href="styles/style-product.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="layout-positioner logotips">
+				<div class="border_gradient_logo">
+					<div class="logo">
+						<h1 id="company">COMPANY</h1>
+					</div>
+				</div>
+				<div class="border_gradient_nanotechn">
+					<div class="nanotechn"></div>
+				</div>
+				<div class="nanotechn-zdorovia">Нанотехнологии здоровья</div>
+				<address>
+					<a href="mailto:info@company.ru">
+						<span id="mail">info@company.ru</span>
+					</a>
+					<span id="phone-number">+7 (383) 349-18-49</span>
+				</address>
+			</div>
+			<div class="layout-positioner">
+				<div class="form-login">
+					<form method="post">
+						<label for="loginID">Логин:</label>
+						<input type="text" name="login" id="loginID">
+						<label for="passwordID">Пароль:</label>
+						<input type="password" name="password" id="passwordID">
+						<input type="submit" id="submitF" value="Войти">
+						<a href="#">Регистрация</a>
+					</form>
+					<div class="basket">
+						В <a href="#">корзине</a> товаров <span>12</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="fon_grey">
+			<div class="layout-positioner"> 
+				<span id="open-close">Меню</span>
+				<ul id="list_grey">
+					<li><a href="#">Главная</a></li>
+					<li id="2row">
+						<a href="#" class="selected_kategoria">Каталог</a>
+						<ul class="inner">
+							<li><a href="#">Электронные сигареты</a></li>
+							<li><a href="#">Трубки</a></li>
+							<li><a href="#">Картриджи</a></li>
+							<li><a href="#">Аккумуляторы и атомайзеры</a></li>
+							<li><a href="#">Аксессуары</a></li>
+							<li><a href="#">Зарядные устройства</a></li>
+							<li><a href="#">Жидкости для заправки</a></li>
+							<li><a href="#">Подарочне наборы</a></li>
+						</ul>
+					</li>
+					<li id="3row"><a href="#">О компании</a></li>
+					<li id="4row"><a href="#">Новости</a></li>
+					<li id="5row"><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Контакты</a></li>	
+				</ul>
+			</div>
+		</div>
+		<div id="catalog_main" class="layout-positioner">
+			<aside>
+				<h2 id="head-katalog">Каталог</h2>
+				<ul class="katalog">
+					<li class="selected_katalog"><a href="#">Электронные сигареты</a></li>
+					<li><a href="#">Трубки</a></li>
+					<li><a href="#">Жидкости для заправки</a></li>
+					<li><a href="#">Аккумуляторы и атомайзеры</a></li>
+					<li><a href="#">Картриджи</a></li>
+					<li><a href="#">Зарядные устройства</a></li>
+					<li><a href="#">Аксессуары</a></li>
+					<li><a href="#">Подарочне наборы</a></li>
+				</ul>
+				<h2 id="head-news">Новости</h2>
+				<ul class="news">
+					<li>
+						<div><a href="#">Поздравительная речь президента международной 
+						корпорации Хуа Шэн господина Ли Вея в Международный центр</a></div>
+						<span>2010-03-03</span></li>
+					<li>
+						<div><a href="#">Собрание правления киевского филиала</a></div>
+						<span>2010-02-27</span></li>
+					<li>
+						<div><a href="#">Петропавловскому офису международной корпорации Хуа Шэнисполнился 1 год</a></div>
+						<span>2010-02-23</span></li>
+					<li>
+						<div><a href="#">Проведение церемонии награждения
+						в бишкекском филиале</a></div>
+						<span>2010-02-22</span></li>
+					<li>
+						<div><a href="#">Сотрудники иркутского филиала отметили китайский новый год </a></div>
+						<span>2010-02-15</span></li>
+					<li>
+						<div><a href="#">Празднование китайского нового года в одесском филиале</a></div>
+						<span>2010-02-14</span></li>
+				</ul>
+				<a href="#" class="arhiv">Архив новостей</a>
+			</aside>
+			<div class="content">
+				<ul id="path_to_page">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li>
+						<a href="#">Электронные сигареты</a>
+					</li>
+					<li>
+						<a href="#">Электронная сигарета «Такая-то»</a>
+					</li>
+				</ul>
+				<a id="product_img" href="#">
+					<img src="img/electro-cigaro_440-370.jpg" alt="Электронная сигарета">
+				</a>
+				<h2 class="product_info">
+					Электронная сигарета «Такая-то»
+				</h2>
+				<div class="product_price_for_thing">
+					820
+				</div>
+				<form class="product_data" method="get">
+					<div class="counter">
+						<span class="minus">&#8212;</span>
+						<input type="number" name="number_of_things" value="1" size="3"/>
+						<span class="plus">+</span>
+					</div>
+					<a class="add_to_basket">
+						<span>Добавить в корзину</span>
+					</a>
+				</form>
+				<div id="content_text">
+					<p>Сегодня японские ножи соединили в себе древнейшие традиции изготовления самурайских мечей и инновационные технологии и, именно поэтому японские ножи обладают уникальными свойствами. Сделаны японские ножи только из высококачественных материалов. Клинок японского ножа делают из высокоуглеродистой стали, что обеспечивает его высокую прочность и надежность. Следует отметить, что японские ножи эргономичны по своему дизайну, что обеспечивает удобство и комфорт в работе. Японские ножи суперострые и после заточки очень долго не тупятся, благодаря этому уникальному качеству они получили широкую известность. Японские ножи - это прекрасный выбор, который говорит о требовательности покупателя к высокому качеству ножа и о его превосходном вкусе. Кстати, нужно отметить, что японские ножи предназначены не только для японской, но и для европейской, а также любой другой кухни. В известных ресторанах крупнейших городов во всем мире используют именно японские ножи. Японские ножи -это профессиональные инструменты для японской кухни (купить японские ножи Вы можете у нас).</p>
+					<p>Интернет магазин "Chef" предлагает купить японские ножи (ножи касуми, масахиро), нож для суши. У нас есть японские ножи из дамасской стали (ножи masahiro, касуми). Дамасская сталь - это не просто причудливый узор на лезвии ножа, это технология, сочетающая твердую сталь сердцевины клинка для сохранения остроты ножа и множество слоев мягкой стали, которая и создает рисунок при заточке, для придания гибкости и прочности острой, но хрупкой сердцевине. По этой технологии делались древние острейшие самурайские мечи катаны. Ножи из дамасской стали прочны, надежны и долговечны, что подтверждено многолетним опытом. Не зря ножи из дамасской стали бестселлерами продаж. Есть также товары, которые являются результатом современных научных технологий: титановые, керамические ножи из Японии.</p>
+					<p>Кухонные японские ножи (ножи masahiro, касуми, хаттори) известных торговых марок уже завоевали популярность благодаря своей прочности и уникальным качествам - остроте и долговечности заточки. Японские ножи (ножи касуми, масахиро, хаттори, кухонные ножи из дамасской стали) - это профессиональные поварские инструменты, секреты производства которых передаются и шлифуются мастерами из поколения в поколение. Эти японские ножи обладают особым значением - они своего рода статус шеф-повара, в Японии обладание таким ножом считалось показателем высокого мастерства в поварском деле.</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="layout-positioner">
+				<ul class="footer-elems">
+					<li class="info-about-creature">
+						Copyright &copy;2007-2010<br>
+						<span>&copy; <!--&ldquo;--><span class="skobki">Company</span><!--&rdquo;-->, 2010</span>
+					</li>
+					<li>
+						<ul class="footer-list">
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Доставка и оплата</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</li>
+					<li class="advertising">
+						Разработка сайта &mdash; <a href="#">ITConstruct</a>
+					</li>
+				</ul>
+			</div>
+			<div class="layout-positioner ended">
+				<a href="#" class="mini-logo-company">
+					<img src="img/logo-mini.png" alt="Логотип мини">
+					<span>COMPANY</span>
+				</a>
+				<div class="schetchiki">
+					<img src="img/info.jpg" alt="Инфо">
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/cufon-yui.js"></script>
+		<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+		<script type="text/javascript" src="js/script-main.js"></script>
+		<script type="text/javascript" src="js/script-product.js"></script>
+	</body>
+</html>
